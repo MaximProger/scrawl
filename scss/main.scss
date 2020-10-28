@@ -285,6 +285,15 @@ body {
   position: relative;
 }
 
+.intro__input {
+  background: #fff;
+
+  &.form-control[readonly] {
+    background-color: #fff !important;
+    opacity: 1;
+  }
+}
+
 .intro__input__ing {
   position: absolute;
   right: 15px;
@@ -353,23 +362,23 @@ body {
   }
 }
 
-.stars__item__top {
+.stats__item__top {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   margin-bottom: 24px;
 }
 
-.stars__item__text {
+.stats__item__text {
   font-weight: 600;
   margin-left: 16px;
 }
 
-.stars__item__middle {
+.stats__item__middle {
   margin-bottom: 12px;
 }
 
-.stars__text__big {
+.stats__text__big {
   font-weight: 600;
   font-size: 36px;
   line-height: 44px;
@@ -379,13 +388,13 @@ body {
   margin-top: 49px;
 }
 
-.stars__item__wrapper {
+.stats__item__wrapper {
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
 
-.stars__item {
+.stats__item {
   width: 164px;
 }
 
@@ -396,6 +405,26 @@ body {
   justify-content: center;
   min-height: 100vh;
   height: 100%;
+}
+
+@media (min-width: 1600px) {
+  body {
+    font-size: 30px;
+  }
+
+  .stats__title {
+    font-size: 44px !important;
+  }
+
+  .stats__link {
+    font-size: 20px;
+  }
+
+  .intro {
+    .container {
+      max-width: 1600px;
+    }
+  }
 }
 
 @media (max-width: $tablet) {
@@ -432,11 +461,12 @@ body {
   }
 
   .sidebar__line {
-    display: none;
+    // display: none;
+    margin: 30px 0;
   }
 
   .sidebar__menu {
-    margin-top: 41px;
+    margin-top: 0px;
   }
 
   .sidebar__top__btn {
@@ -497,11 +527,11 @@ body {
     margin-top: 25px;
   }
 
-  .stars__item__top {
+  .stats__item__top {
     margin-bottom: 16px;
   }
 
-  .stars__text__big {
+  .stats__text__big {
     font-size: 20px;
     line-height: 24px;
   }
@@ -574,12 +604,12 @@ body {
     position: absolute;
     z-index: 10;
     left: 0;
-    top: 55px;
+    top: 54px;
     height: 90vh;
     padding-top: 40px;
     &.active {
       display: block !important;
-      background: #f6f6f6 !important;
+      // background: #f6f6f6 !important;
     }
   }
 
@@ -590,13 +620,17 @@ body {
 
   .sidebar__price {
     &.text-white {
-      color: #252f38 !important;
+      // color: #252f38 !important;
     }
   }
 
   .sidebar__menu {
-    margin-top: 49px;
+    margin-top: 0px;
   }
+
+  // .sidebar__line {
+  //   background: #252f38 !important;
+  // }
 }
 
 @media (max-width: $mobile-sm) {
