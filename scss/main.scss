@@ -393,6 +393,105 @@ body {
   .md {
     display: inline-block;
   }
+
+  body {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .btn {
+    font-size: 16px;
+  }
+
+  .logo {
+    width: 114.86px;
+    height: 24px;
+  }
+
+  .sidebar__price {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .sidebar__info {
+    margin-top: 50px;
+    margin-bottom: 13px;
+  }
+
+  .sidebar__line {
+    display: none;
+  }
+
+  .sidebar__menu {
+    margin-top: 41px;
+  }
+
+  .sidebar__top__btn {
+    width: 116px;
+  }
+
+  .sidebar__menu__item {
+    margin-bottom: 34px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .intro {
+    .container {
+      padding-left: 48px;
+      padding-right: 48px;
+    }
+  }
+
+  .intro__top {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+  }
+
+  .intro__top__text {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .intro__input__item {
+    margin-top: 12px;
+    margin-left: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .stats {
+    margin-top: 42px;
+  }
+
+  .stats__title {
+    font-size: 20px !important;
+    line-height: 24px !important;
+    margin-bottom: 12px;
+  }
+
+  .stats__link {
+    width: 116px;
+    height: 40px;
+    padding: 7px 0;
+  }
+
+  .stats__tab {
+    margin-top: 25px;
+  }
+
+  .stars__item__top {
+    margin-bottom: 16px;
+  }
+
+  .stars__text__big {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 @media (max-width: $mobile) {
