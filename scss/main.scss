@@ -148,6 +148,10 @@ body {
   }
 }
 
+.no-xl {
+  display: none;
+}
+
 .logo {
   width: 177.07px;
   height: 37px;
@@ -501,6 +505,88 @@ body {
 
   .xs {
     display: inline-block;
+  }
+
+  body {
+    position: relative;
+  }
+
+  .header {
+    width: 100%;
+    padding: 23px 0;
+    height: 55px;
+    display: flex;
+    align-items: center;
+  }
+
+  .header__inner {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+  }
+
+  .header__burger {
+    margin-right: 20px;
+    height: 20px;
+    width: 20px;
+  }
+
+  .header__burger__menu {
+    transition: all 0.2s linear;
+    display: block;
+    background: url("../img/menu.svg") no-repeat center;
+    height: 20px;
+    width: 20px;
+
+    &.active {
+      background: url("../img/close.svg") no-repeat center;
+    }
+  }
+
+  .intro .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .intro {
+    padding-top: 40px;
+  }
+
+  .stats {
+    margin-top: 40px;
+  }
+
+  .stats__link {
+    width: 114px;
+  }
+
+  .sidebar {
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    top: 55px;
+    height: 95vh;
+    padding-top: 40px;
+    &.active {
+      display: block !important;
+      background: #f6f6f6 !important;
+    }
+  }
+
+  .sidebar__info {
+    margin-top: 0;
+    align-items: baseline;
+  }
+
+  .sidebar__price {
+    &.text-white {
+      color: #252f38 !important;
+    }
+  }
+
+  .sidebar__menu {
+    margin-top: 49px;
   }
 }
 

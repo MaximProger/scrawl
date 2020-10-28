@@ -1,6 +1,8 @@
 $(document).ready(function () {
+  // Bootstrap tooltip
   $('[data-toggle="tooltip"]').tooltip();
 
+  // Copy proxy
   /* сохраняем текстовое поле в переменную text */
   var text = document.getElementById("inputText");
 
@@ -12,4 +14,10 @@ $(document).ready(function () {
     text.select();
     document.execCommand("copy");
   };
+
+  // Burger menu
+  $(".header__burger__menu").on("click", function () {
+    $(this).toggleClass("active");
+    $(".sidebar").toggleClass("active");
+  });
 });
